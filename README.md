@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+#food-explorer
+---------------
+This project is a React.js application that allows users to explore food products using the OpenFoodFacts API. Key features include searching, filtering by category, sorting, viewing detailed product information, and adding items to the cart.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Key Features:
+-------------
+>Product Search: Users can search for products by name.
+>Category Filtering: Products can be filtered by categories (initially set to "snacks").
+>Sorting: Products can be sorted by name (A-Z, Z-A) and nutrition grade (ascending/descending).
+>Pagination: A "Load More" button dynamically loads additional products.
+>Cart Functionality: Users can add products to a cart, with a confirmation alert.
+>Conditional Image Rendering: Displays a stock image if no product image is available.
+>Responsive Design: TailwindCSS is used to ensure mobile responsiveness.
 
-## Available Scripts
+Libraries Used:
+---------------
+>React.js: For building the user interface.
+>React Router: For handling navigation.
+>Context API: For state management across components.
+>TailwindCSS: For styling and responsive design.
+>OpenFoodFacts API: For fetching food product data.
 
-In the project directory, you can run:
+Problem-Solving Methods:
+-------------------------
 
-### `npm start`
+1.State Management with Context API--> I have used React's Context API to manage global states like products, categories, cart, search queries, and sorting preferences. Easy data sharing through components without Prop drilling.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2.API Integration--> The fetch method within useEffect was used to handle API calls when users searched, filtered, or loaded more products.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3.Search and Filtering--> I have used the input form to take the input from the user passed it to the API and searched the products dynamically. The dropdown method each time the user changes the category APi call will be initiated.
 
-### `npm test`
+4.Sorting--> Used JavaScript's "Sort()" method to sort the filtered products.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5.Pagination with "Load More"--> Every time the load more was clicked more products were fetched by API.
 
-### `npm run build`
+6.Cart Functionality: Implemented an Add to Cart feature, where products could be added to the cart, and the product remained in the cart until removed.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+7.Responsive Design: TailwindCSS utilities were used to make the UI responsive across different screen sizes. Flexbox and grid utilities ensured proper alignment and layout adjustments for both small and large screens.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+8.Fallback for Missing Images: For products without images, a default stock image was rendered to ensure visual consistency on the product cards.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you."# Food" 
