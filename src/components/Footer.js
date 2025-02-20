@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className='flex justify-around align-middle items-center fixed bottom-[-100%] lg:bottom-0 h-[15vh] left-0 bg-slate-300 w-full text-white text-center'>
           <p className=' font-light text-black text-3xl'>Enjoy your shopping</p>
-          <div className='flex gap-5 text-black  cursor-pointer '>
+          <div className='flex gap-5 text-black  cursor-pointer md:border-none'>
               <FaFacebook size={30}/>
               <FaInstagram size={30}/>
               <MdEmail size={30}/>
